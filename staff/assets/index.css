@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(../../assets/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+    font-display: swap;
+}
+
+:root {
+    --primary-color: #138d87;
+    --lighter-color: #39b9b3;
+    --secondary-color: #efeff7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Raleway", sans-serif;
+    color: #111;
+}
+
+body {
+    /* animation: bg-color .5s ease 50ms infinite normal; */
+    background-image: linear-gradient(to right, rgb(143, 233, 255), rgb(238, 101, 208));
+}
+
+/* @keyframes bg-color {
+    0% {
+        background-image: linear-gradient(to right, rgb(143, 233, 255), rgb(238, 101, 208));
+    }
+    100% {
+        background-image: linear-gradient(to right, rgb(238, 101, 208), rgb(143, 233, 255));
+    }
+} */
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: #111;
+    position: relative;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header ul {
+    display: flex;
+    width: 50%;
+    float: right;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.card-container {
+    width: 90%;
+    min-height: 85vh;
+    margin: auto;
+    margin-top: 20px;
+    /* background-color: crimson; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: var(--lighter-color);
+    margin: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+}
+
+.card:hover {
+    transition: transform 150ms ease-in-out;
+    transform: scale(1.05, 1.05);
+}
+
+.card p {
+    font-weight: 300;
+
+}
+
+.card p,
+.card h2 {
+    margin-bottom: 30px;
+}
+
+.card a {
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 10%;
+    background-color: #1da59e;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .card {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        width: 260px;
+        height: 260px;
+    }
+}

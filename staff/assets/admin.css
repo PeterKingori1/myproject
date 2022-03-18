@@ -1,0 +1,279 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(../../assets/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(../../assets/fonts/Poppins/Poppins-Regular.ttf);
+    font-display: swap;
+}
+
+:root {
+    --primary-color: #138d87;
+    --lighter-color: #39b9b3;
+    --secondary-color: #efeff7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Raleway", sans-serif;
+    color: #111;
+}
+
+body {
+    background-image: linear-gradient(to right, rgba(47, 205, 245, 0.808), rgba(235, 70, 199, 0.829));
+}
+
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: #111;
+    position: relative;
+    color: white;
+
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header ul {
+    float: right;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    justify-content: space-around;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.success-message,
+.error-message {
+    margin: 15px auto;
+    width: 50%;
+    color: white;
+
+    padding: 5px;
+    text-align: center;
+}
+
+.success-message {
+    background-color: rgb(70, 180, 143);
+}
+
+.error-message {
+    background-color: crimson;
+}
+
+
+
+
+.side-bar {
+    width: 12%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 7vh;
+    background-color: rgba(47, 205, 245, 0.808);
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+section {
+    width: 85%;
+    margin-left: 14%;
+    min-height: 80vh;
+    margin-top: 7px;
+    padding: 30px 30px;
+    background: white;
+
+
+}
+
+.staff-section {
+    width: 100%;
+    height: 100%;
+    display: none;
+
+}
+
+
+.side-bar button {
+    margin-top: 5px;
+    font-family: "poppins", sans-serif;
+    font-weight: 800;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(235, 70, 92, 0.829);
+    width: 100%;
+    height: 7%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.staff-table {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-weight: 600;
+    border-spacing: 0;
+}
+
+.staff-table tr td {
+    padding: 10px;
+}
+
+.staff-table tr:nth-child(even) {
+    background-color: #ceeeec;
+}
+
+.staff-table tr th {
+    background: rgb(180, 187, 174);
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+
+}
+
+.btn-remove {
+    background-color: crimson;
+    padding: 3px 6px;
+}
+
+.btn-add-admin {
+    background-color: rgb(12, 146, 12);
+    padding: 3px 6px;
+}
+
+.staff-section form {
+    width: 100%;
+    /* background-color: green; */
+    margin-top: 60px;
+    background-color: rgb(218, 219, 218);
+}
+
+.staff-section form h2 {
+    text-align: center;
+}
+
+.input-container {
+    margin-left: 30%;
+    transform: translateX(-10%);
+    margin-top: 20px;
+}
+
+.input-container input {
+    padding: 5px 10px;
+    margin-right: 5px;
+    padding: 7px 14px;
+    border: none;
+    outline: none;
+
+}
+
+.input-container input::placeholder {
+    font-family: "poppins", sans-serif;
+    font-size: 17px;
+}
+
+
+
+.staff-section form button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    font-family: "poppins", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.staff-section form button:hover {
+    background-color: steelblue;
+    color: white;
+    transition: all 500ms ease;
+
+}
+
+.rooms-section {
+    width: 100%;
+    height: 100%;
+    display: none;
+
+}
+
+
+.rooms-section form {
+    width: 100%;
+    /* background-color: green; */
+    margin-top: 60px;
+    background-color: rgb(218, 219, 218);
+}
+
+.rooms-section form h2 {
+    text-align: center;
+}
+
+.rooms-section .input-container {
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+
+}
+
+.rooms-section .input-container input {
+    margin-right: 5px;
+
+}
+
+.rooms-section form button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    font-family: "poppins", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.rooms-section form button:hover {
+    background-color: steelblue;
+    color: white;
+    transition: all 500ms ease;
+
+}
+
+.open {
+    display: block;
+}

@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(../../assets/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+
+}
+
+
+@font-face {
+    font-family: "poppins";
+    src: url("../../assets/fonts/Poppins/Poppins-Regular.ttf") format("woff2");
+
+
+
+}
+
+:root {
+    --primary-color: #138d87;
+    --lighter-color: #39b9b3;
+    --secondary-color: #efeff7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Raleway", sans-serif;
+    color: #111;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(50, 210, 250), rgb(235, 70, 199));
+}
+
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: #111;
+    position: relative;
+    color: white;
+}
+
+.btn {
+
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: larger;
+}
+
+
+.extras-container {
+    width: 40%;
+    height: 70vh;
+    margin: 5vh auto;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.extras-container h2 {
+    background-color: #acf3ef;
+    text-align: center;
+
+}
+
+.extras-container p {
+    font-family: 'poppins', Courier, monospace;
+
+}
+
+.extras-container p span {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    text-transform: uppercase;
+    /* background-color: #111; */
+}
+
+.extras-container a {
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10px;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
